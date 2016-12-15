@@ -19,5 +19,5 @@ from gigs.views import LookupView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', LookupView.as_view(), name='lookup'),
+    url(r'^$', LookupView.as_view(), name='lookup'),
 ]

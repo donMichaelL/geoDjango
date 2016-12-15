@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul>
+    {% for event in events %}
+    <li>{{ event.name }} - {{ event.venue.name }} - Distance: {{event.distance}}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

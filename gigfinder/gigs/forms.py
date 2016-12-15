@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.forms import ModelForm
+from django.forms import ModelForm, Form, FloatField
 from floppyforms.gis import PointWidget, BaseGMapWidget
 from .models import Venue
 
@@ -17,3 +17,8 @@ class VenueAdminForm(ModelForm):
         widgets = {
             'location': CustomPointWidget()
         }
+
+
+class LookupForm(Form):
+    latitude = FloatField()
+    longitude = FloatField()
