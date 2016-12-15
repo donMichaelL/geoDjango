@@ -12,6 +12,7 @@ class Venue(models.Model):
 
 class Area(models.Model):
     name = models.CharField(max_length=200)
+    # area[0].coords to get the coords as a tuple
     area = models.PolygonField()
 
     def __str__(self):
