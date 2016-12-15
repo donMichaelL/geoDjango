@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
+    'floppyforms',
     'gigs',
 ]
 
@@ -124,3 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+GOOGLE_MAP_API_KEY = 'AIzaSyDY5q8ZE2FF-UyDUREMBnyBA2apEmt7wJs'
