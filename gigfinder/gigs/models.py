@@ -10,6 +10,14 @@ class Venue(models.Model):
         return self.name
 
 
+class Area(models.Model):
+    name = models.CharField(max_length=200)
+    area = models.PolygonField()
+
+    def __str__(self):
+        return self.name
+
+
 class Event(models.Model):
     name = models.CharField(max_length=200)
     datetime = models.DateTimeField()
